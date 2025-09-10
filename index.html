@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condor - Materiais Para Construção</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #FF6B00;
+            --secondary-color: #003B7A;
+            --light-color: #F8F9FA;
+            --dark-color: #212529;
+        }
+        
+        .bg-primary-custom {
+            background-color: var(--primary-color) !important;
+        }
+        
+        .text-primary-custom {
+            color: var(--primary-color) !important;
+        }
+        
+        .btn-primary-custom {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #e05e00;
+            border-color: #e05e00;
+            color: white;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            color: white;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .category-card {
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .testimonial-card {
+            background-color: var(--light-color);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-house-gear-fill me-2"></i>
+                <strong>CONDOR</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vantagens">Vantagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Tudo para sua obra com qualidade e preço justo</h1>
+            <p class="lead mb-4">Há mais de 25 anos oferecendo os melhores materiais de construção</p>
+            <a href="#produtos" class="btn btn-warning btn-lg">Ver Produtos</a>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Sobre a <span class="text-primary-custom">Condor</span></h2>
+                    <p class="lead">Há mais de 25 anos no mercado, a Condor é referência em materiais para construção civil e imobiliário.</p>
+                    <p>Desde nossa fundação em 23 de setembro de 1999, temos compromisso com a qualidade dos produtos e a satisfação dos nossos clientes.</p>
+                    <p>Nossa missão é fornecer os melhores materiais para construção, com preços competitivos e atendimento especializado.</p>
+                    <div class="mt-4">
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-check-circle-fill text-primary-custom me-2"></i>
+                            <span>CNPJ: 03.261.204/0002-55</span>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-check-circle-fill text-primary-custom me-2"></i>
+                            <span>Razão Social: Condor Atacadista de Materiais Para Construcao S/A</span>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-check-circle-fill text-primary-custom me-2"></i>
+                            <span>Mais de 25 anos de experiência no mercado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded" alt="Loja Condor">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos/Categorias -->
+    <section id="produtos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Nossos <span class="text-primary-custom">Produtos</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card category-card">
+                        <img src="https://images.unsplash.com/photo-1621525141066-7a4a150d1bdb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Materiais Básicos">
+                        <div class="card-body text-center">
+                            <i class="bi bi-bricks feature-icon"></i>
+                            <h5 class="card-title">Materiais Básicos</h5>
+                            <p class="card-text">Cimento, areia, brita, tijolos, telhas e muito mais para sua obra.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card category-card">
+                        <img src="https://images.unsplash.com/photo-1581578021517-5d8ad8597852?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Hidráulica">
+                        <div class="card-body text-center">
+                            <i class="bi bi-droplet feature-icon"></i>
+                            <h5 class="card-title">Materiais Hidráulicos</h5>
+                            <p class="card-text">Tubos, conexões, registros e tudo para a parte hidráulica da sua construção.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card category-card">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Elétrica">
+                        <div class="card-body text-center">
+                            <i class="bi bi-lightning-charge feature-icon"></i>
+                            <h5 class="card-title">Materiais Elétricos</h5>
+                            <p class="card-text">Fios, disjuntores, tomadas, lâmpadas e tudo para a instalação elétrica.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card category-card">
+                        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Acabamentos">
+                        <div class="card-body text-center">
+                            <i class="bi bi-house feature-icon"></i>
+                            <h5 class="card-title">Acabamentos</h5>
+                            <p class="card-text">Tintas, pisos, cerâmicas, portas, janelas e itens para o acabamento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card category-card">
+                        <img src="https://images.unsplash.com/photo-1580477667995-2b94f01c9516?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Ferramentas">
+                        <div class="card-body text-center">
+                            <i class="bi bi-tools feature-icon"></i>
+                            <h5 class="card-title">Ferramentas</h5>
+                            <p class="card-text">Ferramentas manuais, elétricas e equipamentos para construção.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card category-card">
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Decoração">
+                        <div class="card-body text-center">
+                            <i class="bi bi-flower1 feature-icon"></i>
+                            <h5 class="card-title">Decoração e Jardim</h5>
+                            <p class="card-text">Itens decorativos, plantas, vasos e materiais para paisagismo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vantagens -->
+    <section id="vantagens" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Por que escolher a <span class="text-primary-custom">Condor</span>?</h2>
+            <div class="row g-4">
+                <div class="col-md-3 text-center">
+                    <i class="bi bi-truck feature-icon"></i>
+                    <h5>Entrega Rápida</h5>
+                    <p>Entregamos em toda a região com agilidade e segurança.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="bi bi-currency-dollar feature-icon"></i>
+                    <h5>Preços Competitivos</h5>
+                    <p>Os melhores preços do mercado com qualidade garantida.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="bi bi-award feature-icon"></i>
+                    <h5>Qualidade Garantida</h5>
+                    <p>Trabalhamos apenas com produtos de marcas reconhecidas.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="bi bi-people feature-icon"></i>
+                    <h5>Atendimento Especializado</h5>
+                    <p>Equipe treinada para oferecer o melhor suporte técnico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">O que nossos clientes dizem</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex mb-3">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="mb-3">"Comprei todos os materiais para minha casa na Condor. Preço justo e entrega rápida. Recomendo!"</p>
+                        <p class="fw-bold">Carlos Silva</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex mb-3">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="mb-3">"Atendimento excelente e variedade de produtos. Encontrei tudo que precisava para minha reforma."</p>
+                        <p class="fw-bold">Maria Oliveira</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex mb-3">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                        </div>
+                        <p class="mb-3">"Há anos compro na Condor para minhas obras. Confiança e qualidade que não encontro em outros lugares."</p>
+                        <p class="fw-bold">João Santos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Entre em <span class="text-primary-custom">Contato</span></h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="telefone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-custom">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Informações de Contato</h5>
+                            <p><i class="bi bi-geo-alt-fill text-primary-custom me-2"></i> Endereço: Av. Principal, 1234 - Centro</p>
+                            <p><i class="bi bi-telephone-fill text-primary-custom me-2"></i> Telefone: (XX) XXXX-XXXX</p>
+                            <p><i class="bi bi-whatsapp text-primary-custom me-2"></i> WhatsApp: (XX) XXXXX-XXXX</p>
+                            <p><i class="bi bi-envelope-fill text-primary-custom me-2"></i> Email: contato@condormateriais.com.br</p>
+                            <hr>
+                            <h5 class="card-title">Horário de Funcionamento</h5>
+                            <p>Segunda a Sexta: 8h às 18h</p>
+                            <p>Sábado: 8h às 13h</p>
+                            <p>Domingo: Fechado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Condor Materiais para Construção</h5>
+                    <p>Há mais de 25 anos oferecendo qualidade e preço justo para sua obra.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Início</a></li>
+                        <li><a href="#sobre" class="text-white">Sobre</a></li>
+                        <li><a href="#produtos" class="text-white">Produtos</a></li>
+                        <li><a href="#contato" class="text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-whatsapp fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>CNPJ: 03.261.204/0002-55 | Razão Social: Condor Atacadista de Materiais Para Construcao S/A</p>
+                <p>&copy; 2023 Condor Materiais para Construção. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/5500000000000" class="whatsapp-float" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
